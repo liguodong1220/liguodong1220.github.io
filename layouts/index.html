@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+
+<h2 class="section-title">最新文章</h2>
+<ul class="post-list">
+  {{ range first 10 (where .Site.RegularPages "Section" "posts").ByDate.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <time>{{ .Date.Format "2006-01-02" }}</time>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
