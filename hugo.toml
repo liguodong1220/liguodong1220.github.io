@@ -1,11 +1,7 @@
-# Hugo 站点配置（PaperMod 主题）
-# 用法：把本文件复制到仓库根目录，改掉 baseURL 和 params.homeInfoParams 里的占位内容
-
 baseURL = "https://liguodong1220.github.io/"
-languageCode = "zh-cn"
+languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 title = "黎国栋的安全笔记"
-theme = "PaperMod"
 enableRobotsTXT = true
 hasCJKLanguage = true
 
@@ -15,25 +11,6 @@ hasCJKLanguage = true
 [params]
   author = "黎国栋"
   description = "网络安全学习笔记：渗透测试、网络基础、华为安全设备"
-  ShowReadingTime = true
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true          # 文章目录
-  TocOpen = false
-  comments = false
-
-  [params.homeInfoParams]
-    Title = "你好，我是黎国栋"
-    Content = "网络工程技术（本科），网络安全方向。这里记录渗透测试与网络设备的实践笔记。"
-
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/liguodong1220"
-  [[params.socialIcons]]
-    name = "mail"
-    url = "mailto:liguodong1220@users.noreply.github.com"
 
 [menu]
   [[menu.main]]
@@ -41,9 +18,13 @@ hasCJKLanguage = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
     name = "关于"
     url = "/about/"
-    weight = 20
+    weight = 30
 
 [markup]
   [markup.highlight]
@@ -51,4 +32,4 @@ hasCJKLanguage = true
     lineNos = true
     codeFences = true
   [markup.goldmark.renderer]
-    unsafe = true   # 允许在 Markdown 里直接写 HTML（如折叠块）
+    unsafe = true
