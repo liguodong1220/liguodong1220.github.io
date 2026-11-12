@@ -11,9 +11,8 @@ hidemeta: true
 
 ## 在做什么
 
-- 在 DVWA 靶场上做漏洞复现，重点是把"为什么能通"讲清楚，而不只是"能弹窗"
-- 整理网络与安全的学习笔记：VLAN/OSPF、IPsec VPN、防火墙双机热备
-- 持续补 OWASP Top 10 与常见工具（Burp Suite、sqlmap、Nmap、AWVS）
+- DVWA 靶场漏洞复现，记录 payload 与修复方法
+- 整理网络与安全笔记：VLAN/OSPF、IPsec VPN、防火墙双机热备
 
 ## 技能
 
@@ -31,4 +30,4 @@ hidemeta: true
 
 ---
 
-*本站所有实验均在本地靶场或仿真环境完成，不涉及任何未授权的真实系统。*
+*本站实验均在本地靶场或仿真环境完成。*
